@@ -3,6 +3,7 @@
 /* 
  * norman utility
  * runs postman collections test via newman
+ * see https://www.npmjs.com/package/newman#api-reference
  * 2019-01
  * mamund
  */
