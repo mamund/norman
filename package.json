@@ -1,0 +1,36 @@
+{
+  "name": "norman",
+  "version": "1.0.0",
+  "description": "Runs tests using postman collections locally (via newman)",
+  "main": "index.js",
+  "bin": {
+    "norman": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mamund/norman.git"
+  },
+  "keywords": [
+    "postman",
+    "newman",
+    "test",
+    "api",
+    "http",
+    "rest",
+    "mamund",
+    "amundsen"
+  ],
+  "author": "Mike Amundsen (mamund)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mamund/norman/issues"
+  },
+  "homepage": "https://github.com/mamund/norman#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "newman": "^4.3.1"
+  }
+}
