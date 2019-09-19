@@ -37,6 +37,8 @@ function runner(coll, en) {
     newman.run(options, function (err) {
       if (err) { throw err; }
       console.log('collection run complete!');
+      // add deployment command here
+      // shell.exec("insertproper git command here for heroku deploy");
     });  
   }
   else {
