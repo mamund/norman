@@ -31,6 +31,7 @@
   "homepage": "https://github.com/mamund/norman#readme",
   "dependencies": {
     "commander": "^2.19.0",
-    "newman": "^4.3.1"
+    "newman": "^4.3.1",
+    "shelljs": "^0.8.3"
   }
 }

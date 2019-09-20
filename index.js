@@ -17,6 +17,7 @@
 var newman = require('newman');
 var program = require('commander');
 var fs = require('fs');
+var shell = require('shelljs');
 
 // top-level routine
 program
@@ -34,11 +35,16 @@ function runner(coll, en) {
     options.environment = en;
     options.reporters = 'cli';
      
-    newman.run(options, function (err) {
+    newman.run(options, function (err, summary) {
       if (err) { throw err; }
-      console.log('collection run complete!');
-      // add deployment command here
-      // shell.exec("insertproper git command here for heroku deploy");
+      if (summary.run.failures.length!==0) {
+         console.log("One or more tests failed.")
+      }
+      else {
+         console.log('collection run complete!');
+         // add deployment command here
+         shell.exec("git push heroku master");
+      }
     });  
   }
   else {
