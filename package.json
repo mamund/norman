@@ -32,6 +32,6 @@
   "dependencies": {
     "commander": "^2.19.0",
     "newman": "^6.2.1",
-    "shelljs": "^0.8.5"
+    "shelljs": "^0.10.0"
   }
 }
